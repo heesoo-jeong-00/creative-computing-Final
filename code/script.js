@@ -74,8 +74,8 @@ Events.on(engine, 'afterUpdate', function() {
     }
 
     let bodyPosition = poses[0].pose.keypoints.reduce((bodyPosition, keypoint) => {
-        if (keypoint.score > 0.2) {  // Consider keypoints with a minimum confidence
-            bodyPosition.x += (window.innerWidth - keypoint.position.x); // 좌우 반전 좌표 계산
+        if (keypoint.score > 0.2) {  
+            bodyPosition.x += (window.innerWidth - keypoint.position.x); 
             bodyPosition.y += keypoint.position.y;
             bodyPosition.count++;
         }
