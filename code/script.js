@@ -144,7 +144,7 @@ if (armPoints.length > 0) {
                 const dy = armPoint.y - body.position.y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
                 if (distance < 150) { 
-                    const forceMagnitude = 6e-4; 
+                    const forceMagnitude = 7e-4; 
                     const force = {
                         x: dx / distance * forceMagnitude,
                         y: dy / distance * forceMagnitude
